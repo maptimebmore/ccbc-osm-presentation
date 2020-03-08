@@ -4,4 +4,4 @@ This is a repo for a presentation on OSM to the CCBC GIS Capstone course, March 
 
 The presentation was prepared [RemarkJS](https://github.com/gnab/remark)
 
-The presentation can be viewed here: [CCBC OSM Presentation](https://jondandois.github.io/ccbc-osm-presentation)
+The presentation can be viewed here: [CCBC OSM Presentation](https://maptimebmore.github.io/ccbc-osm-presentation)
