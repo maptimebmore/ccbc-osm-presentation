@@ -35,14 +35,83 @@ March 10, 2020
 
 
   .image-middle[![OSM Homepage](./images/osm-homepage.png)]<br>
-  .font-small[[OpenStreetMap.org](https://Openstreetmap.org)]
+  .font-small[[OpenStreetMap.org](https://Openstreetmap.org)]<br>
+  .font-small[[OSM Welcome Mat: welcome.openstreetmap.org](https://welcome.openstreetmap.org/)]
 
   .footnote[.red[*] OSM has a license and OpenStreetMap.org does have usage limits, see: [Terms of Use](https://wiki.osmfoundation.org/wiki/Terms_of_Use)]
 ]
 
 ---
+.left-column[
+  ## Introduction
+  ### Explore POIs
+]
+.right-column[
+  --picture of OSM with POIs
+]
+
+---
+.left-column[
+  ## Introduction
+  ### View different basemaps
+]
+.right-column[
+  --pictures of OSM with different basemaps
+]
+
+---
+.left-column[
+  ## Introduction
+  ### Turn-by-turn navigation
+]
+.right-column[
+  ## Directions for car, bike, foot travel
+  -- pictures of routing
+]
+
+---
+.left-column[
+  ## Introduction
+  ### Mobile apps
+]
+.right-column[
+  -- pictures of different mobile map alternatives for OSM 
+]
+
+---
+.left-column[
+  ## Introduction
+  ### Webmap Basemaps
+]
+.right-column[
+  -- supports a number of Basemaps for your web mapping applications (e.g., Leaflet, OpenLayers)
+  -- https://leaflet-extras.github.io/leaflet-providers/preview/
+]
+
+---
+.left-column[
+  ## Introduction
+  ### Used by many
+]
+.right-column[
+OpenStreetMap is used by people all over the world: 
+  - individuals
+  - volunteers
+  - companies 
+    - Amazon, Apple, Esri, Facebook, Garmin, Mapbox...
+  - nonprofits
+  - governments
+  - organizations
+  - and more
+
+There are many ways to use OpenStreetMap: as a basemap, using the OSM data for routing or navigation, using OSM data for GIS analysis, such as planning or logistics for humanitarian groups, utilities, governments and more.
+
+~ https://welcome.openstreetmap.org/about-osm-community/consumers/
+]
+
+---
 class: center, middle, inverse
-# but...
+# because...
 
 ---
 class: center
@@ -59,13 +128,13 @@ class: center
   - roads, crosswalks, speed bumps, stop lights...
   - restuarants, daycares, playgrounds, cannons...
   - forests, central business districts, boundaries...
-  - sdfgsdfgfd
+  - land cover, gravestones, utility ROWs..
 
-  .image-middle[![OSM Homepage](./images/josm-640px.png)]
-  .font-small[Example of OSM data in the [JOSM editor](https://josm.openstreetmap.de/)]
-  .footnote[
-    JOSM image credit: [Wikmedia Commons](https://commons.wikimedia.org/wiki/File:JOSM_screenshot_hoofdscherm.png)
-  ]
+.image-middle[![OSM Homepage](./images/josm-640px.png)]<br>
+.font-small[Example of OSM data in the [JOSM editor](https://josm.openstreetmap.de/)]
+.footnote[
+  JOSM image credit: [Wikmedia Commons](https://commons.wikimedia.org/wiki/File:JOSM_screenshot_hoofdscherm.png)
+]
 
 <!--  -->
 ]
@@ -76,8 +145,8 @@ class: center
   ## Introduction
 ]
 .right-column[
+  OpenStreetMap is **GIS** in action at a global scale.
 
-  Who uses OSM?
 ]
 
 
@@ -88,20 +157,22 @@ class: center
 .right-column[
 
   editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
-  - editing, digitizing
-  - databases
-
+  - Editing, digitizing, image interpretation
+  - Databases
+  - Metadata and attributes
+  - Data Quality (QA/QC)
+  - 
 ]
 
 ---
 .left-column[
   ## OSM & GIS
   ### Editing & Digitizing
+  ### Image Interpretation
 ]
 .right-column[
   editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
-  - editing
-  - database
+  
 ]
 
 ---
@@ -110,7 +181,34 @@ class: center
   ### Databases
 ]
 .right-column[
-  editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
-  - editing
-  - database
+- OSM data model (nodes, ways, relates)
+]
+
+---
+.left-column[
+  ## OSM & GIS
+  ### Metadata
+  ### Attributes
+]
+.right-column[
+## Tags
+https://wiki.openstreetmap.org/wiki/Tags
+### Key:Value pairs
+10's of thousands of key tags across OSM
+```JS
+  key: Highway
+  highway: motorway
+  highway: trunk
+  highway: primary
+  highway: secondary
+  ...
+  highway: unclassified
+
+  key: Leisure
+  leisure: bowling_alley
+  leisure: escape_game
+  leisure: maze
+  ...
+  ...
+```
 ]
