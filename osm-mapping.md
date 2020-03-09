@@ -1,8 +1,9 @@
 class: center, middle, inverse
 # Getting started with OpenStreetMap
-MaptimeBmore & CCBC GIS Capstone
+MaptimeBmore & CCBC GIS Capstone<br>
+March 10, 2020<br>
+[jonathan dandois](https://twitter.com/jondandois)
 
-March 10, 2020
 
 .footnote[This presesentation was made with [RemarkJS](https://github.com/gnab/remark)]
 
@@ -68,7 +69,7 @@ March 10, 2020
   ### Used by many groups
 ]
 .right-column[
-OpenStreetMap is used by people all over the world: 
+OpenStreetMap is used by people all over the world:
   - individuals
   - volunteers
   - companies (Apple, Esri, Facebook, ...)
@@ -79,7 +80,7 @@ OpenStreetMap is used by people all over the world:
 
 There are many ways to use OpenStreetMap: as a basemap, using the OSM data for routing or navigation, using OSM data for GIS analysis, such as planning or logistics for humanitarian groups, utilities, governments and more.
 
-~ https://welcome.openstreetmap.org/about-osm-community/consumers/
+.font-small[https://welcome.openstreetmap.org/about-osm-community/consumers/]
 ]
 
 ---
@@ -111,27 +112,20 @@ class: center
 ]
 
 ---
-.left-column[
-  ## Introduction
-]
-.right-column[
-  OpenStreetMap is **GIS** in action at a global scale.
-
-]
-
+## OpenStreetMap is **GIS** in action at a global scale.
+.center[.image-large[![Wuhan](https://wiki.openstreetmap.org/w/images/thumb/e/ef/OSM_edits_in_Wuhan_2020.jpg/1024px-OSM_edits_in_Wuhan_2020.jpg)]]<br>
+.font-small[OSM edits in Wuhan 2020. [Rendering by Jeff Underwood Mar 3, 2020](https://twitter.com/jeffdefacto/status/1235066401745817600)]<br>
+.font-small[https://wiki.openstreetmap.org/wiki/File:OSM_edits_in_Wuhan_2020.jpg]
 ---
 .left-column[
   ## OSM & GIS
 ]
 .right-column[
 Editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
-  - Editing, digitizing, image interpretation
-  
-  - Databases
-  
-  - Metadata and attributes
-  
-  - Data Quality (QA/QC)
+  ## Editing, digitizing, image interpretation
+  ## Databases
+  ## Metadata and attributes
+  ## Data Quality (QA/QC)
 ]
 
 ---
@@ -165,7 +159,7 @@ A connected line of nodes. Used to create roads, paths, rivers, and so on.  Ways
 
 ### Relates
 Can be used to create more complex shapes, or to represent elements that are related but not physically connected.
- 
+
   .font-small[https://wiki.openstreetmap.org/wiki/Beginners_Guide_1.3]
 ]
 
@@ -222,7 +216,7 @@ Tags are the .underline[attributes] for OSM nodes, ways, and relates.
 
 ## Offline Editing
 - JOSM
-- 
+-
 ]
 
 ---
@@ -236,7 +230,7 @@ Tags are the .underline[attributes] for OSM nodes, ways, and relates.
 
 ## Humanitarian OSM Team (HOT)
 - aaaaa
-- 
+-
 ]
 ---
 .left-column[
