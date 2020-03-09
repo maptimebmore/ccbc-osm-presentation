@@ -47,30 +47,20 @@ March 10, 2020
 
 ---
 ## Customized cartography for different themes
-.image-width-max[![POIs](./images/cycle-map.png)]
+.image-width-max[![Themes](./images/cycle-map.png)]
 
 ---
 ## Directions for car, bike, foot travel
-.image-width-max[![POIs](./images/navigation.png)]
+.image-width-max[![Directions](./images/navigation.png)]
 
 ---
-.left-column[
-  ## Introduction
-  ### Mobile apps
-]
-.right-column[
-  -- pictures of different mobile map alternatives for OSM 
-]
+## Mobile apps
+.image-width-max[![Mobile](./images/mobile.png)]
 
 ---
-.left-column[
-  ## Introduction
-  ### Webmap Basemaps
-]
-.right-column[
-  -- supports a number of Basemaps for your web mapping applications (e.g., Leaflet, OpenLayers)
-  -- https://leaflet-extras.github.io/leaflet-providers/preview/
-]
+### Multiple basemaps themes
+.image-width-max[![Basemaps](./images/basemaps.png)]
+.font-small[https://leaflet-extras.github.io/leaflet-providers/preview/]
 
 ---
 .left-column[
@@ -164,21 +154,30 @@ Features are added to the map through on-screen digitizing from high-resolution 
 .left-column[
   ## OSM & GIS
   ### Databases
+  .image-middle[![Nodes](./images/node-way-relation.png)]
 ]
 .right-column[
-- OSM data model (nodes, ways, relates)
+### Nodes
+Dots used to mark locations. Nodes can be separate or can be connected.
+
+### Ways
+A connected line of nodes. Used to create roads, paths, rivers, and so on.  Ways can be open (lines), **closed** (closed loop, areas), **areas** (closed, filled in areas).
+
+### Relates
+Can be used to create more complex shapes, or to represent elements that are related but not physically connected.
+ 
+  .font-small[https://wiki.openstreetmap.org/wiki/Beginners_Guide_1.3]
 ]
 
 ---
 .left-column[
   ## OSM & GIS
-  ### Metadata
-  ### Attributes
+  ### Metadata & Attributes
 ]
 .right-column[
 ## Tags
-https://wiki.openstreetmap.org/wiki/Tags
-### Key:Value pairs
+Tags are the .underline[attributes] for OSM nodes, ways, and relates.
+### Tags are organized as Key:Value pairs
 10's of thousands of key tags across OSM
 ```JS
   key: Highway
@@ -196,6 +195,7 @@ https://wiki.openstreetmap.org/wiki/Tags
   ...
   ...
 ```
+.font-small[https://wiki.openstreetmap.org/wiki/Tags]
 ]
 
 ---
