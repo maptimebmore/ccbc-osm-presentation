@@ -42,32 +42,16 @@ March 10, 2020
 ]
 
 ---
-.left-column[
-  ## Introduction
-  ### Explore POIs
-]
-.right-column[
-  --picture of OSM with POIs
-]
+## Explore POIs
+.image-width-max[![POIs](./images/POIs.png)]
 
 ---
-.left-column[
-  ## Introduction
-  ### View different basemaps
-]
-.right-column[
-  --pictures of OSM with different basemaps
-]
+## Customized cartography for different themes
+.image-width-max[![POIs](./images/cycle-map.png)]
 
 ---
-.left-column[
-  ## Introduction
-  ### Turn-by-turn navigation
-]
-.right-column[
-  ## Directions for car, bike, foot travel
-  -- pictures of routing
-]
+## Directions for car, bike, foot travel
+.image-width-max[![POIs](./images/navigation.png)]
 
 ---
 .left-column[
@@ -91,14 +75,13 @@ March 10, 2020
 ---
 .left-column[
   ## Introduction
-  ### Used by many
+  ### Used by many groups
 ]
 .right-column[
 OpenStreetMap is used by people all over the world: 
   - individuals
   - volunteers
-  - companies 
-    - Amazon, Apple, Esri, Facebook, Garmin, Mapbox...
+  - companies (Apple, Esri, Facebook, ...)
   - nonprofits
   - governments
   - organizations
@@ -130,15 +113,12 @@ class: center
   - forests, central business districts, boundaries...
   - land cover, gravestones, utility ROWs..
 
-.image-middle[![OSM Homepage](./images/josm-640px.png)]<br>
+.image-middle[![OSM Homepage](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/JOSM_screenshot_hoofdscherm.png/640px-JOSM_screenshot_hoofdscherm.png)]<br>
 .font-small[Example of OSM data in the [JOSM editor](https://josm.openstreetmap.de/)]
 .footnote[
   JOSM image credit: [Wikmedia Commons](https://commons.wikimedia.org/wiki/File:JOSM_screenshot_hoofdscherm.png)
 ]
-
-<!--  -->
 ]
-
 
 ---
 .left-column[
@@ -149,19 +129,19 @@ class: center
 
 ]
 
-
 ---
 .left-column[
   ## OSM & GIS
 ]
 .right-column[
-
-  editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
+Editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
   - Editing, digitizing, image interpretation
+  
   - Databases
+  
   - Metadata and attributes
+  
   - Data Quality (QA/QC)
-  - 
 ]
 
 ---
@@ -171,8 +151,13 @@ class: center
   ### Image Interpretation
 ]
 .right-column[
-  editing in OSM for just a few minutes covers a huge range of what you learn about in a GIS program:
-  
+  Image interpretation and digitizing is a core component of contributing to OSM.
+  - POIs, addresses (points)
+  - Roads, sidewalks, paths (lines)
+  - School areas, central business districts, parks, lakes, playgrounds (polygons)
+
+Features are added to the map through on-screen digitizing from high-resolution aerial, satellite, and drone-based imagery by digitizing points, lines, and polygons.
+.image-middle[![OSM Editing](./images/osm-editing.jpg)]
 ]
 
 ---
@@ -212,3 +197,61 @@ https://wiki.openstreetmap.org/wiki/Tags
   ...
 ```
 ]
+
+---
+.left-column[
+  ## OSM & GIS
+  ### Data Quality
+]
+.right-column[
+  ## Data Quality
+  - connecting nodes
+  - required tags
+
+]
+
+---
+.left-column[
+  ## Contributing
+  ### Editing
+]
+.right-column[
+## Browser-based Editing
+- iD Editor
+- Potlach
+
+## Offline Editing
+- JOSM
+- 
+]
+
+---
+.left-column[
+  ## Contributing
+  ### Task Managers
+]
+.right-column[
+## US Tasking Manager
+- aaaa
+
+## Humanitarian OSM Team (HOT)
+- aaaaa
+- 
+]
+---
+.left-column[
+  ## Downloading
+]
+.right-column[
+## Overpass API
+sdasdsa
+## QuickOSM
+sdsad
+]
+
+---
+## Thank you!
+
+
+View this presentation at:<br>
+[https://github.com/maptimebmore/ccbc-osm-presentation](https://github.com/maptimebmore/ccbc-osm-presentation)
