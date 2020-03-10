@@ -212,14 +212,14 @@ Can be used to create more complex shapes, or to represent elements that are rel
 ## Data Quality
 Data issues in iD Editor
 .center[
-  .image-width-max[![Issues](./images/issues.PNG)]
+  .image-width-max[![Issues](./images/issues.png)]
 ]
 
 ---
 ## Data Quality
 Data issues in iD Editor
 .center[
-  .image-width-max[![Warnings](./images/warnings.PNG)]
+  .image-width-max[![Warnings](./images/warnings.png)]
 ]
 
 ---
