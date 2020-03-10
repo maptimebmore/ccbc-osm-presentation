@@ -51,6 +51,11 @@ a, a > code {
   min-height: 20em
 }
 
+.remark-slide-content .image-teeny-tiny img {
+  max-height: 4em;
+  min-height: 4em
+}
+
 .remark-slide-content .font-tiny {
   font-size: .5em
 }
@@ -67,6 +72,10 @@ a, a > code {
 .remark-slide-content .image-small img {
   max-height: 10em;
   min-height: 10em
+}
+
+.remark-slide-content .font-small-middle {
+  font-size: 0.85em
 }
 
 .remark-slide-content .font-middle {

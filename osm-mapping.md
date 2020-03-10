@@ -8,10 +8,7 @@ March 10, 2020<br>
 .footnote[This presesentation was made with [RemarkJS](https://github.com/gnab/remark)]
 
 ---
-.left-column[
-  ## Agenda
-]
-.right-column[
+## Agenda
 1. Introduction
 
 1. The intersection of GIS and OSM
@@ -21,7 +18,6 @@ March 10, 2020<br>
 1. How to download and extract data from OSM
 
 1. Resources
-]
 
 ---
 .left-column[
@@ -59,7 +55,7 @@ March 10, 2020<br>
 .image-width-max[![Mobile](./images/mobile.png)]
 
 ---
-### Multiple basemaps themes - .font-small[for small Leaflet, OpenLayers, etc. projects]
+### Multiple basemap themes - .font-small[for small Leaflet, OpenLayers, etc. projects]
 .image-width-max[![Basemaps](./images/basemaps.png)]
 .font-small[https://leaflet-extras.github.io/leaflet-providers/preview/]
 
@@ -151,14 +147,14 @@ Features are added to the map through on-screen digitizing from high-resolution 
   .image-middle[![Nodes](./images/node-way-relation.png)]
 ]
 .right-column[
-### Nodes
-Dots used to mark locations. Nodes can be separate or can be connected.
+### Nodes: .font-small[Dots used to mark locations]
+Nodes can be separate or can be connected.
 
-### Ways
-A connected line of nodes. Used to create roads, paths, rivers, and so on.  Ways can be open (lines), **closed** (closed loop, areas), **areas** (closed, filled in areas).
+### Ways: .font-small[A connected line of nodes]
+Used to create roads, paths, rivers, and so on.  Ways can be open (lines), **closed** (closed loop, areas), **areas** (closed, filled in areas).
 
-### Relates
-Can be used to create more complex shapes, or to represent elements that are related but not physically connected.
+### Relates: .font-small[A group of elements]
+Can be used to create more complex shapes, or to represent elements that are related but not physically connected. A grouping of elements and tags.
 
   .font-small[https://wiki.openstreetmap.org/wiki/Beginners_Guide_1.3]
 ]
@@ -167,29 +163,30 @@ Can be used to create more complex shapes, or to represent elements that are rel
 .left-column[
   ## OSM & GIS
   ### Metadata & Attributes
+  .image-tiny[![key-value](https://wiki.openstreetmap.org/w/images/thumb/0/0d/Mf_tag.svg/120px-Mf_tag.svg.png)]
 ]
 .right-column[
 ## Tags
-Tags are the .underline[attributes] for OSM nodes, ways, and relates.
-### Tags are organized as Key:Value pairs
-10's of thousands of key tags across OSM
-```ruby
-  key: Highway
+  - Tags are the .underline[attributes] for nodes, ways, and relates
+  - Organized as Key:Value pairs
+  - 10's of thousands of key tags across OSM
 
+```ruby
+  key: Highway =
   highway: motorway
-  highway: trunk
   highway: primary
   highway: secondary
   highway: unclassified
   ...
 
-  key: Leisure
-
+  key: Leisure =
   leisure: bowling_alley
-  leisure: escape_game
   leisure: maze
+  leisure: playground
   ...
 ```
+- And tags that are associated with other tags, including highway speed, playground surface, business operating hours, etc.
+
 .font-small[https://wiki.openstreetmap.org/wiki/Tags]
 ]
 
@@ -200,24 +197,52 @@ Tags are the .underline[attributes] for OSM nodes, ways, and relates.
 ]
 .right-column[
   ## Data Quality
-  - connecting nodes
-  - required tags
+  Large collection of rules for maintaining quality of feature topology and attributes.
+  .font-small[
+- Ways that do not connect
+- Missing key tags
+- Overlapping buildings
+- Duplicates
+  ]
+  .image-middle[![Osmose](./images/osmose.png)]
+  .font-small[https://wiki.openstreetmap.org/wiki/Quality_assurance]
+]
 
+---
+## Data Quality
+Data issues in iD Editor
+.center[
+  .image-width-max[![Issues](./images/issues.PNG)]
+]
+
+---
+## Data Quality
+Data issues in iD Editor
+.center[
+  .image-width-max[![Warnings](./images/warnings.PNG)]
 ]
 
 ---
 .left-column[
   ## Contributing
   ### Editing
+  .image-teeny-tiny[![iD](https://wiki.openstreetmap.org/w/images/thumb/3/34/ID.svg/100px-ID.svg.png)]
+  .image-teeny-tiny[![JOSM](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/JOSM_Logotype_2019.svg/60px-JOSM_Logotype_2019.svg.png)]
+  .image-teeny-tiny[![Vespucci](https://wiki.openstreetmap.org/w/images/thumb/5/52/Vespucci-logo.svg/60px-Vespucci-logo.svg.png)]
 ]
 .right-column[
-## Browser-based Editing
-- iD Editor
-- Potlach
+## Basic In-Browser Editing
+- iD Editor https://wiki.openstreetmap.org/wiki/ID
+- Quick editing, most Task Manager tasks
 
-## Offline Editing
-- JOSM
--
+## Advanced Desktop Editing
+- JOSM https://wiki.openstreetmap.org/wiki/JOSM
+- Advanced editing of large areas, bulk uploads
+
+## Mobile Editing
+- Vespucci (Android) https://wiki.openstreetmap.org/wiki/Vespucci
+- GoMap!! (iOS) https://wiki.openstreetmap.org/wiki/Go_Map!!
+
 ]
 
 ---
@@ -288,6 +313,15 @@ Export queries to GeoJSON, KML and other formats for use in Desktop GIS.
 ]
 
 ---
+### Overpass Turbo query: .font-small[playgrounds in Baltimore]
+.image-width-max[![Overpass](./images/overpass.jpg)]
+
+---
+### Overpass Turbo query: .font-small[playgrounds in Baltimore]
+.image-width-max[![Overpass Download](./images/overpass-download.jpg)]
+
+
+---
 .left-column[
   ## Downloading
 ]
@@ -298,10 +332,54 @@ https://wiki.openstreetmap.org/wiki/Downloading_data
 Including the whole Planet... https://planet.openstreetmap.org/
 ]
 
+---
+## Let's get mapping!
+### Getting started: login and walkthrough
+.font-small-middle[
+1. Go to OpenStreetMap.org and Login (register if needed)
+1. Click `Edit` in the upper-left and take the Walkthrough
+1. If Walkthrough is hidden: select Help on the right, and "Start the Walkthrough"
+]
+
+### Do some editing
+.font-small-middle[
+1. Go to https://tasks.openstreetmap.us or https://tasks.hotosm.org
+1. Pick a task that is at the **BEGINNER** level with a low **% Mapped**
+1. Read Instructions, then: Map, Select A Random Task, Start Mapping, iD Editor Start Editing.
+1. When done editing in iD Editor **review** and **save** your edits, tag with #maptimebmore, then return to the Task page and select one of the options to stop editing.
+.image-small[![stop editing](./images/stop-editing.png)]
+]
+
+---
+## Download and view
+.font-small-middle[
+1. Go to overpass-turbo.eu
+
+1. Zoom to your area of interest
+
+1. Use the **Wizard** 🧙‍ to build out a query and run it
+
+1. Download as GeoJSON
+
+1. Use **ArcGIS Pro JSON Toolset** to import as a feature class https://pro.arcgis.com/en/pro-app/tool-reference/conversion/json-to-features.htm
+
+1. Explore data, create a visualization, download more data.
+
+1. Or, try doing all this with OSMQuery .font-small[https://github.com/riccardoklinger/OSMquery]
+
+]
+
 
 ---
 ## Thank you!
+### Resources
+- OSM Wiki: https://wiki.openstreetmap.org/
+- LearnOSM: https://learnosm.org/
+- TeachOSM: https://teachosm.org/
 
+### Follow MaptimeBmore
+https://www.meetup.com/maptime_bmore/<br>
+https://twitter.com/MaptimeBmore
 
 View this presentation at:<br>
 [https://github.com/maptimebmore/ccbc-osm-presentation](https://github.com/maptimebmore/ccbc-osm-presentation)
